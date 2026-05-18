@@ -1,0 +1,7 @@
+{
+    "chat.mcp.gallery.enabled": true,
+    "claudeCode.preferredLocation": "panel",
+    "claudeCode.allowDangerouslySkipPermissions": true,
+    "claudeCode.initialPermissionMode": "bypassPermissions",
+    "security.workspace.trust.banner": "never"
+}
