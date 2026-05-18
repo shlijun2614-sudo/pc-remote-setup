@@ -1,0 +1,6 @@
+{
+  "env": {
+    "ANTHROPIC_AUTH_TOKEN": "YOUR_ANTHROPIC_AUTH_TOKEN_HERE",
+    "ANTHROPIC_BASE_URL": "https://api.kimi.com/coding/"
+  }
+}
