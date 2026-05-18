@@ -1,0 +1,42 @@
+{
+  "env": {
+    "ANTHROPIC_AUTH_TOKEN": "YOUR_ANTHROPIC_AUTH_TOKEN_HERE",
+    "ANTHROPIC_BASE_URL": "https://api.kimi.com/coding/"
+  },
+  "includeCoAuthoredBy": false,
+  "skipDangerousModePermissionPrompt": true,
+  "permissions": {
+    "defaultMode": "bypassPermissions",
+    "allow": [
+      "Skill(update-config)",
+      "Skill(update-config:*)",
+      "Bash(git status:*)",
+      "Bash(git diff:*)",
+      "Bash(npm test:*)",
+      "Read(**)",
+      "Edit(**)",
+      "Bash(python -c \"import json; d=json.load\\(open\\('C:/Users/Administrator/.claude/settings.json'\\)\\); print\\('valid JSON'\\); print\\('allow rules:', len\\(d['permissions']['allow']\\)\\); [print\\(' -', r\\) for r in d['permissions']['allow']]\")",
+      "WebFetch(domain:mirrors.tuna.tsinghua.edu.cn)",
+      "Bash(curl -s \"https://mirrors.tuna.tsinghua.edu.cn/CRAN/bin/windows/base/\")",
+      "Bash(curl -L -o /tmp/R-installer.exe \"https://mirrors.tuna.tsinghua.edu.cn/CRAN/bin/windows/base/R-4.6.0-win.exe\")",
+      "Read(//tmp/**)",
+      "Bash(/tmp/R-installer.exe /VERYSILENT /SUPPRESSMSGBOXES /NORESTART /DIR=\"D:\\\\Rlanguage\" /LOG=\"/tmp/R-install.log\" /CURRENTUSER)",
+      "Bash(echo \"Exit: $?\")",
+      "Bash(ls -la /d/Rlanguage/ 2>&1 | head -20; echo \"---\"; ls /d/Rlanguage/bin/ 2>&1 | head -10)",
+      "Read(//d/Rlanguage//**)",
+      "Read(//d/Rlanguage/bin//**)",
+      "Bash(/d/Rlanguage/bin/R.exe --version)",
+      "Bash(/d/Rlanguage/bin/Rscript.exe -e 'cat\\(\"R works! sqrt\\(2\\) =\", sqrt\\(2\\), \"\\\\n\"\\)')",
+      "Bash(rm -f /tmp/R-installer.exe /tmp/R-install.log 2>&1; echo \"Cleanup done\")",
+      "Bash(code --version)",
+      "Bash(code tunnel *)",
+      "Bash(curl -sI --max-time 10 https://github.com/login/device/code)",
+      "Bash(curl -sI --max-time 10 https://login.microsoftonline.com/)"
+    ],
+    "additionalDirectories": [
+      "C:\\Users\\Administrator\\.claude",
+      "\\tmp"
+    ]
+  },
+  "theme": "dark"
+}
