@@ -1,4 +1,4 @@
-#Requires -RunAsAdministrator
+﻿#Requires -RunAsAdministrator
 <#
 .SYNOPSIS
     一键配置 Windows PC 的 Tailscale + OpenSSH + SSH 密钥认证
